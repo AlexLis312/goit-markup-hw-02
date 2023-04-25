@@ -8,6 +8,7 @@
 
 body {
   background-color: var(--prime-white-color);
+  color: var(--text-color);
   font-family: Roboto, sans-serif;
 
   font-weight: 400;
@@ -32,11 +33,6 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-}
-.section p {
-  color: var(--text-color);
-
-  font-style: normal;
 }
 .list {
   list-style: none;
@@ -72,7 +68,6 @@ nav a {
 }
 
 .contacts a {
-  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -143,7 +138,7 @@ address {
 /* portfolio */
 
 .portfolio-buttons .button {
-  background-color: #ffffff;
+  background-color: var(--prime-white-color);
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -154,8 +149,8 @@ address {
 }
 .portfolio-buttons .button:hover,
 .portfolio-buttons .button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--prime-white-color);
 }
 
 .works h2 {
@@ -168,8 +163,6 @@ address {
 }
 
 .works p {
-  color: var(--text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
