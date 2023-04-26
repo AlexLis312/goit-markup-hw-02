@@ -38,9 +38,6 @@ h1 {
   list-style: none;
 }
 /* header */
-nav a {
-  font-style: normal;
-}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -53,7 +50,7 @@ nav a {
 .first-logo {
   color: var(--accent-color);
 }
-.site-nav a {
+.site-nav .link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -63,11 +60,17 @@ nav a {
   text-decoration: none;
   cursor: pointer;
 }
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
-.contacts a {
+.contacts .mail-tel {
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -75,7 +78,8 @@ nav a {
   text-decoration: none;
   cursor: pointer;
 }
-.contacts .mail {
+.contacts .mail-tel:focus,
+.contacts .mail-tel:hover {
   color: var(--accent-color);
 }
 
@@ -97,7 +101,8 @@ nav a {
 
 /* peculiarities */
 
-.peculiarities h3 {
+.peculiarities-title {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -105,13 +110,14 @@ nav a {
 
 /* our team */
 
-.teammates h3 {
+.teammates-title {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 0.84;
   text-align: center;
 }
-.teammates p {
+.position {
   font-weight: 400;
   font-size: 16px;
   line-height: 0.84;
@@ -125,18 +131,32 @@ footer {
 
   text-decoration: none;
 }
-address {
+.foot-logo {
+  font-family: Raleway, sans-serif;
+  color: var(--prime-white-color);
+
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.address {
   font-style: normal;
 }
-.footer-contacts a {
+.foot-mail-tel {
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
   text-decoration: none;
 }
+.foot-mail-tel:hover,
+.foot-mail-tel:focus {
+  color: var(--accent-color);
+}
 
 /* portfolio */
-
+.noline {
+  text-decoration: none;
+}
 .portfolio-buttons .button {
   background-color: var(--prime-white-color);
   color: var(--title-text-color);
@@ -153,7 +173,7 @@ address {
   color: var(--prime-white-color);
 }
 
-.works h2 {
+.works-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -162,7 +182,8 @@ address {
   letter-spacing: 0.06em;
 }
 
-.works p {
+.work-type {
+  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
